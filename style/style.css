@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    font-family: "Work Sans", sans-serif;
+}
+
+/* shared style */
+.display-flex{
+    display: flex;
+}
+/* dark 02 nicher color ta */
+.text-gray{
+    color: #424242;
+}
+/* dark 03 nicher color ta */
+.text-light-gray{
+    color: #727272;
+}
+.tect-primary{
+    color: #ff900e;
+}
+
+.bg-light{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+.btn-primary{
+    background-color: rgb(255, 144, 14);
+    color: rgb(255, 255, 255);
+    padding: 20px 25px;
+    font-size: 1.5rem;
+    font-weight: 800;
+    border: none;
+    border-radius: 8px;
+}
+
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main > section{
+    margin-top: 130px;
+}
+
+.our-future{
+    margin-left: 130px;
+    max-width: 530px;
+
+}
+
+.fact-description{
+    max-width: 540px;
+}
+
+/* header style */
+
+
+/* navber related style */
+
+
+.navber{
+justify-content: space-between;
+align-items: center;
+}
+.nav-item{
+    list-style: none;
+    margin-right: 30px;
+}
+.nav-link{
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navber, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.brand{
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+
+/* banner related style */
+.banner-content{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.banner-title{
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.banner-images{
+    width: 100%;
+    
+}
+
+/* teams and future related style */
+.teams{
+    align-items: center;
+}
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.section-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+
+
+#quick-list{
+    font-weight: 500;
+}
+
+/* feature section related style */
+.feature{
+    gap: 100px;
+}
+#feature-section-title{
+    border-left: 5px solid #ff900e;
+    padding-left: 21px;
+}
+
+.feature-card{
+    padding: 30px;
+    box-shadow: 0 4px 30px 0 rgba(0,0,0, 0.06);
+    margin-bottom: 20px;
+}
+
+.feature-card, .feature-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#experience-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+
+#experience-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.feature-arcitect img{
+    width: 100%;
+}
+
+/* sume facts related styles */
+.facts-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.fact-card{
+    border: 1px solid #ff900e;
+    width: 240px;
+    height: 240px;
+    text-align: center;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.fact-number{
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.fact-name{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/* sponsor related style */
+.sponsor-info{
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.sponsor-companies{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.sponsor-companies img{
+    filter: grayscale(100%);
+}
+
+/* footer style related */
+.footer{
+    width: 1440px;
+    height: 100px;
+    border: 2px solid black;
+    margin: 160px auto;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+
+#footer-description{
+    color: rgb(66, 66, 66);
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+
+
+/* responsive style related */
+@media screen and (max-width: 576px) {
+    .navber, 
+    .nav-link,
+    .feature,
+    .footer{
+        flex-direction: column;
+    }
+    .teams{
+        flex-direction: column;
+
+    }
+
+    .team-img-container, 
+    .facts-container,
+    .sponsor-companies{
+        grid-template-columns: 1fr;
+    }
+
+    .facts-container{
+        justify-items: center;
+        gap: 24px;
+       
+    }
+
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
+
+    }
+
+    .sponsor-companies{
+        justify-items: center;
+        gap: 50px;
+    }
+    .our-future{
+        margin: 0;
+    }
+    .footer{
+        width: auto;
+        text-align: center;
+    }
+}
+
+/* madium sixe device */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .teams, .feature{
+        flex-direction: column;
+    }
+
+    .our-future{
+        margin: 50px auto;
+    }
+    .sponsor-companies, .facts-container{
+        grid-template-columns: repeat(2,1fr);
+        gap: 50px;
+        justify-items: center;
+    }
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
+
+    }
+}
+
